@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="">
+  <title>MUSIC PLAYER</title>
+  <link rel="stylesheet" href="mp3-player.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" type="image" href="https://www.mcicon.com/wp-content/uploads/2021/01/Music_Music_1-copy-9.jpg"
+</head>
+<body>
+
+<div class="content">
+  <audio src="mp3/feelingGood.mp3" id="track" type="audio">
+  </audio>
+  <div class="details">
+  <div class="song_order back-text"></div>
+  <div class="now_playing back-text">Now playing</div>
+  </div>
+
+  <div class="center_flex">
+    <img id="track_img" src="images/tracks/feelingood_nina.jpeg">
+    <h1 class="back-text" id="track_name">Feeling Good</h1>
+    <h2 class="back-text" id="artist_name">Nina Simone</h2>
+  </div>
+
+    <div class="icons">
+      <div id="back_track">
+        <i class="fas fa-step-backward"></i>
+      </div>
+
+      <div id="play_music">
+        <i class="fas fa-play-circle"></i>
+      </div>
+
+      <div id="pause_music">
+        <i class="fas fa-pause-circle"></i>
+      </div>
+
+      <div id="next_track">
+        <i class="fas fa-step-forward"></i>
+      </div>
+    </div>
+
+    <div>
+      <div id="currentTime"></div>
+      <input type="range" min="0" max="100" value="0" id="track_time">
+      <div id="durationTime"></div>
+    </div>
+</div>
+  <script type="text/javascript" src="mp3-player.js"></script>
+</body>
+</html>
